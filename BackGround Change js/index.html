@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Ground Changer</title>
+    <link href="https://fonts.googleapis.com/css?family=Tektur:regular,500,600,700,800,900" rel="stylesheet" />
+    <style>
+        body{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            font-family:Tektur ;
+        }
+     .btn{
+        width: 100px;
+        border: 2px solid ;
+        height: 40px;
+        display: inline-block;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 8px 2px 10px black;
+     }
+     .btn:hover{
+        box-shadow: 0px 0px 0px ;
+     }
+     #wheat{
+        background-color: wheat;
+     }
+     #pink{
+        background-color: pink;
+     }
+     #aqua{
+        background-color: aquamarine;
+     }
+     #red{
+        background-color: red;
+     }
+     #yellow{
+        background-color: yellow;
+     }
+     #blue{
+        background-color: skyblue;
+     }
+    </style>
+</head>
+<body>
+    <h1>Choose Color :</h1>
+    <span class="btn" id="blue"  onclick="changeBG('skyblue')"></span>
+    <span class="btn" id="pink"  onclick="changeBG('pink')"></span>
+    <span class="btn" id="wheat"  onclick="changeBG('wheat')"></span>
+    <span class="btn" id="red"  onclick="changeBG('red')"></span>
+    <span class="btn" id="aqua"  onclick="changeBG('aquamarine')"></span>
+    <span class="btn" id="yellow"  onclick="changeBG('yellow')"></span>
+
+    <script>
+      function changeBG(color){
+    document.body.style.backgroundColor = color;
+}
+    </script>
+</body>
+</html>
