@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word counter using javascript</title>
+      <link href="https://fonts.googleapis.com/css?family=Tektur:regular,500,600,700,800,900" rel="stylesheet" />
+    <style>
+        body{
+            font-family: Tektur;
+            text-align: center;
+            background-color: lightblue;
+        }
+        .lab{
+            background-color: lightblue;
+            
+           width: 100%;
+        }
+        textarea{
+            font-size: 20px;
+            padding: 23px;
+           
+        }
+        p{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lab">
+        <h1>Word and Charachter Counter</h1>
+    </div>
+    <textarea rows="12" cols="80" id="textbox"></textarea>
+   <p>
+    <span id="word">0</span> Words and <span id="char">0</span> Characters
+   </p>
+
+   <script>
+
+    let textboxnew = document.getElementById("textbox");
+
+    textboxnew.addEventListener('input' , function(){
+        var text = this.value;
+        document.getElementById("char").innerHTML =text.length;
+        
+        text = text.trim();
+        var words = text.split(" ");
+        let cleanlist= words.filter(function(elm){
+            return elm != "";
+        });
+        document.getElementById("word").innerHTML =cleanlist.length;
+
+    });
+
+
+   </script>
+</body>
+</html>
