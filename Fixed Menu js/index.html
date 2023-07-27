@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+             body{
+                margin: 0px;
+             }
+             #header{
+                text-align: center;
+             }
+             #logo
+             {
+                height: 100px;
+                width: 300px;
+             }
+             #menubar{
+                text-align: center;
+                background-color: cadetblue;
+             }
+             #menubar li{
+                display: inline-block;
+                color: white;
+                font-size: 20px;
+                padding: 14px;
+                cursor: pointer;
+             }
+             #container{
+                text-align: center;
+               
+                padding: 50px 100px;
+             }
+             p{
+                font-size: 19px;
+             }
+             img{
+                box-shadow: 2px 8px 10px gray;
+                margin: 20px;
+             }
+             .sticky{
+                position:fixed;
+                top:0;
+                width: 100%;
+             }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" id="logo">
+    </div>
+    <nav id="menubar">
+        <li>Home</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Our team</li>
+        <li>Client</li>
+        <li>New</li>
+    </nav>
+    <div id="container">
+        <h1>Heading</h1>
+        <img src="https://www.designstreet.com.au/staging2021/wp-content/uploads/2019/09/Logos_Blog.jpg" width="700px" height="400px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, consequatur unde inventore saepe sequi nostrum, laudantium nesciunt et, modi enim nisi magni delectus quidem sunt. Ad repellendus labore fugiat laborum ut odit delectus enim itaque maiores at nemo sint, placeat quasi nam nobis neque asperiores dolorem assumenda ullam doloremque ipsa voluptatibus vitae alias iure. Veniam eum eius laudantium, tempora nisi modi illum totam et! Officiis voluptatum sapiente illum, fuga perferendis natus sequi neque ipsam enim et libero possimus, incidunt facere nobis autem hic! Sed esse ipsam id porro laboriosam ratione necessitatibus consequatur atque eveniet quisquam pariatur explicabo rem impedit, veniam eum quo quasi! Consectetur provident harum maxime magnam, nemo eveniet temporibus ullam. Illo, a similique magnam ipsa explicabo quisquam fugit iusto vero, quaerat ipsam autem quae maxime aliquid impedit aliquam atque laboriosam tenetur voluptatum recusandae laudantium ad laborum numquam fugiat. Animi quae magni obcaecati aut distinctio iusto totam, ex omnis ipsa quis, dolores quo molestiae autem earum accusamus ducimus sed? Dicta deserunt id inventore ullam obcaecati explicabo temporibus magni repellendus quo excepturi atque dolorem nemo, sed tenetur voluptas nostrum maiores vero accusantium rerum, fugiat commodi ea consequatur! Illum perferendis est beatae. Doloremque praesentium porro consectetur iusto! Quasi asperiores officiis eius deserunt perspiciatis. Quo architecto voluptates officia itaque illum non provident doloremque autem ducimus consectetur, unde, sunt quam earum natus eos magni et tempore accusantium mollitia ut exercitationem aperiam dolore amet. Voluptatibus cumque quod ducimus beatae dolores architecto eveniet illum, quisquam corrupti quibusdam, veniam quae temporibus pariatur! Illo nulla dolores quod, nostrum, similique, sed laborum minima corporis id doloribus ipsa accusantium vero quasi eum ut repellendus libero dolorem dolor reprehenderit veniam! Vel laborum similique exercitationem, repellendus incidunt facilis minima ut repudiandae non praesentium? Odio, dignissimos quis! Facere expedita, iure vero animi tempore deserunt odit fuga doloribus reprehenderit, ut sunt dolores? Iusto at facilis, doloremque repudiandae impedit quos unde quisquam maiores sapiente dolor nobis officiis eligendi illo itaque neque. Quibusdam reprehenderit, doloribus quo, nemo cupiditate temporibus nam doloremque repudiandae beatae quisquam fuga modi quam enim! Fugiat, alias explicabo dolorum nihil voluptate in error eum debitis suscipit necessitatibus tempora doloremque eligendi veritatis, laborum reprehenderit perferendis ut excepturi ipsam molestias quod ducimus deserunt minus ratione architecto. Molestias quas labore eos deserunt rerum, distinctio fugit repellat perspiciatis quisquam at facilis exercitationem hic. Corrupti natus explicabo quia laborum maiores, reprehenderit error nobis vel quo aliquam quod dolorum consequatur tenetur perspiciatis quisquam numquam molestiae minus. Porro voluptas placeat tenetur magnam, hic dolore vero quibusdam consectetur deleniti pariatur aut. Commodi sequi in id beatae numquam fugit excepturi placeat nihil illo explicabo recusandae harum illum quasi deserunt, quibusdam vel quae modi vitae? Deserunt excepturi provident dignissimos facilis quos at nihil! Eum omnis ad in blanditiis quidem laboriosam quisquam illo eos eligendi? Esse maxime ipsa suscipit dolorum, minus dolor ullam veniam nemo quam eius excepturi, quisquam placeat commodi alias maiores ea amet iusto illo est. Totam voluptatem obcaecati, incidunt possimus impedit earum dolore assumenda? Nisi voluptatibus vero laboriosam amet itaque consequatur impedit dolorum optio soluta dolor, aut distinctio reprehenderit quasi.</p>
+    </div>
+
+    <script>
+           window.addEventListener('scroll',function(){
+                
+            let navbar = document.getElementById('menubar');
+
+            if(window.pageYOffset >= 144)(
+                navbar.classList.add('sticky')
+            )
+            else(
+                navbar.classList.remove('sticky')
+            )
+           });
+    </script>
+</body>
+</html>
